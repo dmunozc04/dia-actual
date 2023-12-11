@@ -1,0 +1,31 @@
+ <p id="fechaActual"></p>
+
+    <script>
+        // Obtener la fecha actual
+        var fecha = new Date();
+
+        // Obtener los componentes de la fecha
+        var dia = fecha.getDate();
+        var mes = fecha.getMonth() + 1; // Los meses comienzan desde 0, por lo que sumamos 1
+        var ano = fecha.getFullYear();
+
+        // Crear una cadena con la fecha
+        var fechaActualString = dia + '/' + mes + '/' + ano;
+
+        // Mostrar la fecha en el elemento con id "fechaActual"
+        document.getElementById('fechaActual').textContent = fechaActualString;
+    </script>
+
+    <style>
+      body{
+  margin:0;
+  top:0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #d1d1d1;
+}
+
+p{
+  font-weight:bold;
+  font-size:50pt;
+}
+    </style>
